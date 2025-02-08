@@ -1,0 +1,57 @@
+.btn {
+  @include flex-align-center(9);
+  line-height: 1;
+  color: #211360;
+  overflow: hidden;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 72px;
+  max-width: max-content;
+  background-color: $accent;
+  border: 1px solid transparent;
+  transition: background-color .4s, border .4s, color .4s, transform .6s;
+  @media (max-width: 420px) {
+    font-size: 15px;
+  }
+
+  &:hover {
+    background-color: #0ed295;
+    border-color: transparent;
+    color: #211360;
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: $white;
+    border-color: $accent;
+
+    svg path {
+      stroke: $white;
+    }
+  }
+
+  &--gray {
+    background-color: rgba($white, .15);
+    backdrop-filter: blur(18px);
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+
+      svg path {
+        stroke: $black;
+      }
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: $accent;
+      color: $white;
+
+      svg path {
+        stroke: $white;
+      }
+    }
+  }
+}

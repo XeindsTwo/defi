@@ -1,0 +1,58 @@
+.features {
+  margin-bottom: 145px;
+
+  &__inner {
+    @include bg;
+    padding: 95px 90px 110px;
+    border-radius: 50px;
+    background-image: url("../images/bg-features.png");
+  }
+
+  &__slogan {
+    margin: 0 auto 35px;
+    max-width: max-content;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 18px;
+    line-height: 1.2;
+    border-radius: 10px;
+    border: 1px solid #162724;
+  }
+
+  &__title {
+    margin-bottom: 85px;
+    text-align: center;
+    font-size: 56px;
+    font-family: $vela;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 120px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid rgba($white, .1);
+    }
+  }
+
+  &__icon {
+    margin-bottom: 48px;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    max-width: 285px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    max-width: 320px;
+    line-height: 1.6;
+    color: rgba($white, .65);
+  }
+}

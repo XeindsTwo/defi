@@ -1,0 +1,42 @@
+.home {
+  &__title {
+    font-family: $vela;
+    text-align: center;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 26px;
+    letter-spacing: -3.84px;
+  }
+
+  &__text {
+    font-size: 18px;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto 82px;
+    color: rgba($white, .65);
+  }
+
+  &__video {
+    @include flex-center;
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto 100px;
+    border-radius: 20px;
+    border: 12px solid #1F3430;
+    box-shadow: 0 4px 135.2px 0 rgba(1, 12, 10, 0.39);
+
+    &-inner {
+      width: 100%;
+      border-radius: 10px;
+      @include objectCoverBg;
+      object-position: left;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    @include topLeft50;
+    @include flex-align-center(10);
+  }
+}
