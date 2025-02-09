@@ -96,6 +96,33 @@
 
 .image-end {
   bottom: 0;
+  @media (max-width: 1460px) {
+    height: 1400px;
+  }
+  @include r($desktop) {
+    height: 1350px;
+  }
+  @media (max-width: 1100px) {
+    height: 1300px;
+  }
+  @include r($lg) {
+    height: 1200px;
+  }
+  @media (max-width: 820px) {
+    height: 1100px;
+  }
+  @include r($tablet) {
+    height: 1300px;
+  }
+  @media (max-width: 660px) {
+    height: 1100px;
+  }
+  @include r($sm) {
+    height: 520px;
+  }
+  @include r($phone) {
+    height: 490px;
+  }
 }
 
 ::-webkit-scrollbar {
