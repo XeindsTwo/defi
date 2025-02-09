@@ -1,5 +1,6 @@
 .btn {
   @include flex-align-center(9);
+  justify-content: center;
   line-height: 1;
   color: #211360;
   overflow: hidden;
